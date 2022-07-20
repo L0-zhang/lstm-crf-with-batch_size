@@ -170,12 +170,11 @@ class BiLSTM_CRF(nn.Module):
                 best_paths: [B, L]
         """
         features = self._get_lstm_features(sentences)
-        B, L, C = features.shape
 
         if model.training:
             forward_score = self._forward_alg(features)
             gold_score = self._score_sentence(
-                features, tags[:, :L].long())
+                features, tags.long())
             loss = (forward_score - gold_score).mean()
             return loss
         else:
