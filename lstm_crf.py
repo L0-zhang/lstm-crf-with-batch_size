@@ -168,7 +168,6 @@ class LSTM_CRF(nn.Module):
                 best_paths: [B, L]
         """
         features = self._get_lstm_features(sentences)
-        B, L, C = features.shape
 
         if model.training:
             forward_score = self._forward_alg(features)
