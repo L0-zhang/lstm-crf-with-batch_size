@@ -8,3 +8,4 @@ It could realize the pos-tagging function with batched data.
 
 Note, curently the model only deal with the input data  with the same length.
 
+Bilstm_crf.py uses the bi-directional lstm model and lstm_crf.py uses the single-directional lstm model.
