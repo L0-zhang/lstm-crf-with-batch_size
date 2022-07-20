@@ -173,7 +173,7 @@ class LSTM_CRF(nn.Module):
         if model.training:
             forward_score = self._forward_alg(features)
             gold_score = self._score_sentence(
-                features, tags[:, :L].long())
+                features, tags.long())
             loss = (forward_score - gold_score).mean()
             return loss
         else:
