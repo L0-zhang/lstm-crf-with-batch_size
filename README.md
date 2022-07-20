@@ -1,6 +1,8 @@
 # lstm-crf-with-batch_size
  
-This code combines https://pytorch.org/tutorials/beginner/nlp/advanced_tutorial.html with https://github.com/jidasheng/bi-lstm-crf.
+This code combines https://pytorch.org/tutorials/beginner/nlp/advanced_tutorial.html with https://github.com/jidasheng/bi-lstm-crf. 
+
+It's easy to understand.
 
 It could realize the pos-tagging function with batched data.
 
